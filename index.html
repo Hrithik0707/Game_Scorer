@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game score counter</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="demo.js"></script>
+    </head>
+    <body>
+        <div class="score-counter">
+<button id="time" onload="printtime()">time</button>
+    
+<div id="player-data">
+
+    <input type="text" id="p1" placeholder="Enter player1" required><br>
+    <input type="text" id="p2" placeholder="Enter player2" required><br>
+    <button id="start" onclick="startGame()">Start</button>    
+    
+</div>
+
+
+
+<div id="score">    
+<select id="maxscore">
+ 
+    <option value="">Set winning score</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+
+</select><br>
+    <p id="inc1">0</p>
+    <span id="to">:</span>
+    <p id="inc2">0</p><br>
+
+    
+    <input type="button" id="Player1" onclick="player1()" value="player1"></button>
+    <input type="button" id="Player2" onclick="player2()" value="player2"></button>
+    <button id="Reset" onclick="Reset()">Reset</button>
+   
+  </div>
+</div>
+    </body>
